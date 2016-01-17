@@ -55,7 +55,7 @@ public class HowtoActivity extends AppCompatActivity {
                 intent_share.setType("text/plain");
                 intent_share.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                 intent_share.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_body));
-                startActivity(Intent.createChooser(intent_share, "choose one"));
+                startActivity(Intent.createChooser(intent_share, getString(R.string.choose_one)));
                 break;
             default:
                 return super.onOptionsItemSelected(item);
