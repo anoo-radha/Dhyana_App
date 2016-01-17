@@ -53,9 +53,9 @@ public class HelpActivity extends AppCompatActivity {
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                 emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body));
                 if (emailIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(Intent.createChooser(emailIntent, "choose one"));
+                    startActivity(Intent.createChooser(emailIntent, getString(R.string.choose_one)));
                 } else {
-                    Toast.makeText(this, "No applications to support email!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.no_mail_apps), Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.rating_id:
@@ -64,7 +64,7 @@ public class HelpActivity extends AppCompatActivity {
                     intent.setData(Uri.parse("market://details?id=com.example.android.dhyana"));
                     startActivity(intent);
                 } else {
-                    Toast.makeText(this, "App can be rated after loading to GooglePlayStore", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.dummy_toast), Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
