@@ -40,6 +40,9 @@
     <string name="features">Menu Options </string>
     <string name="settings_help">\t(You can change these preferences, by clicking on the    icon on the top bar)</string>
     <string name="help_detail">Share this app by pressing the Share icon so others can benefit too. If you have any suggestions/comments please contact us so we can keep improving. Please remember to rate the app.</string>
+    <string name="choose_one"> choose one </string>
+    <string name="no_mail_apps">No applications to support email!</string>
+    <string name="dummy_toast">App can be rated after loading to GooglePlayStore</string>
     <string-array name="tune_array">
         <item>bell</item>
         <item>chime</item>
