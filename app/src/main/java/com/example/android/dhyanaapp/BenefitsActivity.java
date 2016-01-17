@@ -29,18 +29,13 @@ public class BenefitsActivity extends AppCompatActivity {
             R.drawable.benefits4,
             R.drawable.benefits5,
             R.drawable.benefits6};
-    String[] benefits = {
-            "Increases memory and Keeps you super focused",
-            "Increases happiness and Reduces stress",
-            "Reduces Inflammation and pain",
-            "Visibly healthier skin",
-            "Better sleep and Better energy",
-            "Helps reverse chronic ailments"};
+    String[] benefits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.benefits_layout);
+        benefits = getResources().getStringArray(R.array.benefits_title);
         com.example.android.dhyanaapp.CustomList adapter = new com.example.android.dhyanaapp.CustomList(BenefitsActivity.this, benefits, imageId);
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(adapter);
@@ -118,7 +113,7 @@ public class BenefitsActivity extends AppCompatActivity {
                 intent_share.setType("text/plain");
                 intent_share.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
                 intent_share.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_body));
-                startActivity(Intent.createChooser(intent_share, "choose one"));
+                startActivity(Intent.createChooser(intent_share, getString(R.string.choose_one)));
                 break;
             default:
                 return super.onOptionsItemSelected(item);
