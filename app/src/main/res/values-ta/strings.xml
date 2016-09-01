@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Dhyana</string>
-
     <string name="text1">தினசரி தியானிப்பது முக்கியம்</string>
     <string name="meditateButton"> தியானம் செய்க  </string>
     <string name="howto">எப்படி என்று</string>

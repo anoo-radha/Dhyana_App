@@ -23,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the 'meditate now' button is clicked.
+     * This method is called when the 'Benefits' button is clicked.
      */
     public void Benefits(View v) {
         Intent intent = new Intent(this, BenefitsActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * This method is called when the 'meditate now' button is clicked.
+     */
+    public void MeditateNow(View v) {
+        Intent intent = new Intent(this, SettingsDoneActivity.class);
         startActivity(intent);
     }
 
@@ -50,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(this, HowtoActivity.class);
                 startActivity(intent1);
                 break;
-            case R.id.meditate_id:
-                Intent intent2 = new Intent(this, SettingsDoneActivity.class);
+            case R.id.benefits_id:
+                Intent intent2 = new Intent(this, BenefitsActivity.class);
                 startActivity(intent2);
                 break;
             case R.id.help_id:

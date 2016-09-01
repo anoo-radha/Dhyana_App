@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6d946a</color>
-    <color name="colorPrimaryDark">#FF3E6C3B</color>
+    <color name="colorPrimary">#6a948d</color>
+    <color name="colorPrimaryDark">#FF345C56</color>
     <color name="colorAccent">#ffb007</color>
     <color name="startColor">#dfefc995</color>
     <color name="startPressedColor">#33ff3d07</color>
@@ -12,4 +12,5 @@
     <color name="buttonTextColor">#f2000000</color>
     <color name="background">#f5f4ae4f</color>
     <color name="linkColor">#0664e9</color>
+    <color name="backgroundColor">#21486F</color>
 </resources>

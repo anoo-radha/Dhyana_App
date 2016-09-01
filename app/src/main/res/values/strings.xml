@@ -3,6 +3,7 @@
 
     <string name="text1"> Meditating DAILY is the Key  </string>
     <string name="meditateButton"> Meditate Now </string>
+    <string name="lotus_background">lotus background</string>
     <string name="howto">How-To</string>
     <string name="benefits">Benefits</string>
     <string name="links">Links</string>
@@ -38,7 +39,7 @@
     <string name="thanks"> Thanks for choosing Dhyana! \n (If your device supports Tamil locale, you can use the tamil version of this app too.) </string>
     <string name="functions"> Functions </string>
     <string name="features">Menu Options </string>
-    <string name="settings_help">\t(You can change these preferences, by clicking on the    icon on the top bar)</string>
+    <string name="settings_help">\t(You can change these preferences, by clicking on the     icon on the top bar)</string>
     <string name="help_detail">Share this app by pressing the Share icon so others can benefit too. If you have any suggestions/comments please contact us so we can keep improving. Please remember to rate the app.</string>
     <string name="choose_one"> choose one </string>
     <string name="no_mail_apps">No applications to support email!</string>

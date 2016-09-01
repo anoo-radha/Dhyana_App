@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lotus"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lotus"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/lotus_background"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/link1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/link1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="@dimen/activity_smaller_margin"
-            android:text="@string/text1"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:typeface="serif" />
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:text="@string/text1"
+        android:textColor="#fc9404"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_marginTop="100dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/meditate_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/link1"
-            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
             android:background="@drawable/button_style"
-            android:onClick="Benefits"
+            android:onClick="MeditateNow"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:text="@string/benefits"
+            android:text="@string/meditateButton"
             android:textColor="@color/buttonTextColor"
             android:textSize="16sp" />
 
-    </RelativeLayout>
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/button_style"-->
+        <!--android:onClick="Benefits"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:paddingRight="8dp"-->
+        <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+        <!--android:text="@string/benefits"-->
+        <!--android:textColor="@color/buttonTextColor"-->
+        <!--android:textSize="16sp" />-->
 
-</ScrollView>
+</RelativeLayout>
 
 

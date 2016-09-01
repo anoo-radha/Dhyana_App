@@ -11,10 +11,10 @@
         android:title="@string/share"
         app:showAsAction="ifRoom">
     </item>
-    <item android:id="@+id/meditate_id"
+    <item android:id="@+id/benefits_id"
         android:icon="@drawable/ic_benefits"
-        android:title="@string/meditateButton"
-        app:showAsAction="never|withText">
+        android:title="@string/benefits"
+        app:showAsAction="ifRoom">
     </item>
     <item android:id="@+id/links_id"
         android:icon="@drawable/ic_link"

@@ -38,8 +38,8 @@ public class HowtoActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(this, HowtoActivity.class);
                 startActivity(intent1);
                 break;
-            case R.id.meditate_id:
-                Intent intent2 = new Intent(this, SettingsDoneActivity.class);
+            case R.id.benefits_id:
+                Intent intent2 = new Intent(this, BenefitsActivity.class);
                 startActivity(intent2);
                 break;
             case R.id.help_id:
